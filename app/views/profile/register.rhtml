@@ -1,0 +1,9 @@
+<% @title = "Register" -%>
+<h1>New User Registration</h1>
+
+<% form_tag :action => 'register' do %>
+  <%= render :partial => 'form', :locals => {:reg => true} %>
+  <%= submit_tag "Create" %>
+<% end %>
+
+<%= link_to 'Back', :controller => 'login' %>

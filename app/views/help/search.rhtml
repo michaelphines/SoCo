@@ -1,0 +1,47 @@
+<% @title = "Online Help" -%>
+
+<html>
+<head>
+<% form_tag({:action => 'search'}, {:method => 'get'}) do %>
+<% end %>
+</head>
+
+<div class="search">
+        <h2><%= link_to 'Online Help', :controller => 'help', :action => 'index'%> > Search
+        Users:</h2>
+
+        <li>'Search Users' page contains:</li>
+        <br/>
+        <ul>
+            <li> - List of all Registered Soco Users</li>
+
+            <li> - Link to Add a Current User as Friend</li>
+
+            <li> - Link to Remove a Friend</span></p>
+
+            <li> - Link to View Friend's Long-Term Schedule</li>
+            
+            <li> - Main Menu</li>
+        </ul>
+        <br/>
+        <li>Facts:</li>
+        <br/>
+            <ul>
+            <li> 1. When a current friend is listed:</li>
+                <ul>
+                <li> a. Link to 'Remove Friend' appears next to friend's name.</li>
+                <li> b. Link to view friend's 'Long-Term Schedule' appears next to friend's name.</li>
+                </ul>
+            <li> 2. When a user, non-friend, is listed: </li>
+                <ul> 
+                <li> a. Link to 'Add Friend' appears next to user's name.</li></ul>
+                
+            <li> 3. For any displayed user, you can click on their listed name and will be redirected to their user
+            profile.</li>
+            </ul>
+
+        <br/>
+        <%= image_tag "help/image005.gif", :align => 'center' %>
+        <br/>
+        <%= link_to 'Back to Online Help', :controller => 'help', :action => 'index'%>
+        </div>

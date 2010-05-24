@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+first:
+  id: 1
+  cis_course_id: 1
+  year: 2007
+  semester: SP
+another:
+  id: 2
+  cis_course_id: 1
+  year: 2007
+  semester: FA
+
+third:
+  id: 3
+  cis_course_id: 1
+  year: 2007
+  semester: SU  
+
+fourth:
+  id: 4
+  cis_course_id: 5
+  year: 2007
+  semester: SP

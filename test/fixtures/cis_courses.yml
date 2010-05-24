@@ -1,0 +1,107 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+cs225:
+  id: 1
+  course_dependency_id: 1
+  cis_subject_id: 1
+  number: 225
+  title: Data Structures
+  
+math412:
+  id: 2
+  course_dependency_id: 2
+  cis_subject_id: 2
+  number: 412
+  title: Horrible Graph Theory
+
+cs473:
+  id: 3
+  course_dependency_id: 3
+  cis_subject_id: 1
+  number: 473
+  title: Crazy Algorithms
+  
+phych100:
+  id: 4
+  course_dependency_id: 4
+  cis_subject_id: 3
+  number: 100
+  title: Intro to PSYCH
+
+cs428:
+  id: 5
+  course_dependency_id: 5
+  cis_subject_id: 1
+  number: 428
+  title: Software Engineering II
+  
+cs411:
+  id: 6
+  course_dependency_id: 6
+  cis_subject_id: 1
+  number: 411
+  title: Database Systems
+  
+  
+cs125:
+  id: 7
+  course_dependency_id: 7
+  cis_subject_id: 1
+  number: 125
+  title: Intro to CS
+  
+cs173:  
+  id: 8
+  course_dependency_id: 8
+  cis_subject_id: 1
+  number: 173
+  title: Discrete Math
+  
+  
+cs1732:  
+  id: 9
+  course_dependency_id: 9
+  cis_subject_id: 1
+  number: 173
+  title: Discrete Math
+  
+  
+cs1733:  
+  id: 10
+  course_dependency_id: 10
+  cis_subject_id: 1
+  number: 173
+  title: Discrete Math
+  
+  
+cs1734:  
+  id: 11
+  course_dependency_id: 11
+  cis_subject_id: 1
+  number: 173
+  title: Discrete Math
+  
+  
+cs1735:  
+  id: 12
+  course_dependency_id: 12
+  cis_subject_id: 1
+  number: 173
+  title: Discrete Math
+  
+  
+cs1736:  
+  id: 13
+  course_dependency_id: 13
+  cis_subject_id: 1
+  number: 173
+  title: Discrete Math
+  
+  
+cs1737:  
+  id: 14
+  course_dependency_id: 14
+  cis_subject_id: 1
+  number: 173
+  title: Discrete Math
+  
+  

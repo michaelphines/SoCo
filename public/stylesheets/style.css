@@ -1,0 +1,69 @@
+
+body{
+	background:#505C66 url("../images/t-dr.jpg") repeat-x top;
+	text-align:center;
+	margin:0; padding:0;
+}
+
+a:hover{text-decoration:none;}
+
+img { border:0px;}
+
+.dt { display:table; width:100%;}
+
+.dr { display:table-row; width:100%; height:100%;}
+
+.dc { display:table-cell; text-align:left; vertical-align:top; width:100%; }
+
+.main_text, input, textarea, body, select, font
+	{
+		font-family:Arial; 
+		font-size:12px;
+		line-height:15px;
+		color:#424242;
+	}
+	
+input, select, textarea { vertical-align:middle;}
+
+a {color:#1368B0;}
+
+strong { color:#1368B0;}
+
+ul { list-style:none; margin: 0; padding: 0}
+li { background:url(../images/bul.gif) no-repeat left; padding-left:9px; line-height:18px;}
+
+.main > div { width:685px; margin:auto;}
+
+.header { height:261px; background:url(../images/fl.gif) no-repeat top;}
+
+.header_text a { color:#7289A0; font-size:11px; text-decoration:none;}
+.header_text a:hover { text-decoration:underline;}
+.header_text img { margin-left:21px; margin-right:21px; vertical-align:middle;}
+
+.footer { height:35px;}
+.footer .col1 { background:url(../images/b-dr.gif) repeat-x; width:213px;}
+.footer .col1 a { color:#171717; font-size:11px;}
+
+.footer .col2 { width:472px; text-align:right; color:#8598A8; font-size:11px; background:#202020;}
+
+.cont { background:#ECECEC; padding:11px 0px 29px 0px; text-align:left;}
+
+.link { background:url(../images/a.gif) no-repeat 0px 3px; padding-left:12px; font-weight:bold;}
+
+.h_l { background:url(../images/h-l.gif) repeat-x; height:1px;}
+
+.box { border:1px #DCDCDC solid; padding:19px 20px 25px 21px;}
+.box a { color:#DE7D00;}
+.box strong { color:#DE7D00;}
+.box .date { color:#969696; background:url(../images/a.gif) no-repeat left; padding-left:13px; text-transform:uppercase; font-size:11px;}
+
+.box font a { color:#1368B0; font-weight:bold;}
+
+.v_l { background:#DCDCDC; width:1px;}
+
+.form {height:20px; margin-top:0px;}
+.form input {width:203px; height:17px; border-color:#CBCFD3; border-right-width:1px; border-bottom-width:1px; background-color:#ffffff; padding-left:5px}
+
+textarea {width:203px; height:131px; border-color:#CBCFD3; border-right-width:1px; border-bottom-width:1px; background-color:#ffffff; padding-left:5px; overflow:hidden;}
+
+.clear { clear: both; line-height: 0; }

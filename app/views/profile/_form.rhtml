@@ -1,0 +1,41 @@
+<%= error_messages_for 'user' %>
+
+<!--[form:user]-->
+<p><label for="user_username">Username</label><br/>
+<%= text_field 'user', 'username'  %></p>
+
+<p><label for="user_password">Password</label><br/>
+<%= password_field 'user', 'password'  %></p>
+</p>
+
+<p><label for="user_password_confirmation">Re-type Password</label><br/>
+<%= password_field 'user', 'password_confirmation'  %></p>
+</p>
+
+<p><label for="user_first_name">First Name</label><br/>
+<%= text_field 'user', 'first_name'  %></p>
+
+<p><label for="user_last_name">Last Name</label><br/>
+<%= text_field 'user', 'last_name'  %></p>
+
+<p><label for="user_email">Email Address</label><br/>
+<%= text_field 'user', 'email'  %></p>
+
+<p><label>College</label><br/>
+<%= collection_select :user, :college_id, @colleges, 'id', 'name' %></p>
+
+<p><label>Major</label><br/>
+<%= related_collection_select(
+      :user, :major_id, [:user, :college_id], 
+        @majors, :id, :name, :college_id) %></p>
+
+<% if reg -%>
+<p><label>UIUC Start Date</label><br/>
+<%= select 'user', 'start_sem', {'Fall' => 'FA', 'Spring' => 'SP'}, :selected => 'FA' %> 
+<%= select_year(Date.today.year, :prefix => 'user', :field_name => 'start_year', :start_year => Date.today.year + 1, :end_year => Date.today.year - 10 ) %></p>
+<% end -%>
+
+<p><label for="user_birthday">Birthday</label><br/>
+<%= date_select 'user', 'birthday', :start_year => Date.today.year-90, :end_year => Date.today.year-13, :order => [:month, :day, :year] %></p>
+<!--[eoform:user]-->
+

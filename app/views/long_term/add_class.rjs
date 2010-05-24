@@ -1,0 +1,7 @@
+page.insert_html :bottom,
+        'course_bin_courses',
+        :partial => 'course',
+        :locals => {:course => @course, :semester_obj => nil, :effect => false}
+
+page['flashes'].replace :partial => 'layouts/flashes'
+flash.discard

@@ -1,0 +1,5 @@
+<div class="section" style="border:1px solid black; position:absolute; top: <%= 26 + (section.startTime.strftime("%H").to_i-8)*8 + (section.startTime.strftime("%M").to_i)*2/15.0 %>em; height: <%= (section.endTime.strftime("%H").to_i - section.startTime.strftime("%H").to_i)*8 + (section.endTime.strftime("%M").to_i - section.startTime.strftime("%M").to_i)*2/15.0 %>em;">
+    <span class='section_course_title'><%= section.cis_semester.cis_course.cis_subject.code %> <%= section.cis_semester.cis_course.number %></span><br />
+    <%= section.startTime.strftime("%I:%M%p").downcase %> - <%= section.endTime.strftime("%I:%M%p").downcase %> <br />
+    <%= section.crn %>
+</div>

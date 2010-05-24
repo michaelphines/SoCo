@@ -1,0 +1,9 @@
+<% @title = 'Register' %>
+<frameset rows='*,100'>
+<frame src='https://eas.admin.uillinois.edu/eas/servlet/EasLogin?redirect=https://webprod.admin.uillinois.edu/ssa/servlet/SelfServiceLogin?appName=edu.uillinois.aits.SelfServiceLogin&dad=BANPROD1' />
+
+<frame src='<%= url_for :controller => 'register', :action => 'list_crns', :id => params[:id] %>' />
+<noframes>
+Requires frames.
+</noframes>
+</frameset>

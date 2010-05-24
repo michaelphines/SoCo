@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">							
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SoCo - <%= @title %></title>
+
+<link rel="stylesheet" href="/reviews/style.css" type="text/css" media="screen" />
+	<script language="JavaScript" type="text/javascript"><!--
+if  ((navigator.appName == "Microsoft Internet Explorer") && (navigator.userAgent.indexOf ("Opera") == -1))  {
+	document.write ('<link href="/reviews/style_ie.css" rel="stylesheet" type="text/css" media="screen" />');
+};
+//-->
+</script>
+</head>
+<body>
+						<div class="dc" style="width: 7px;"><img src="/reviews/spacer.gif" alt="" height="1" width="7"></div>
+						<div class="dc" style="width: 377px;">
+							<div style="margin-top:9px;" class="spacer"><img src="/reviews/image.gif" alt="" border="0"></div><br>
+							
+									        <% if flash[:notice] -%>
+		            <div id="notice"><%=flash[:notice] %></div><br />
+		        <% end -%>							
+<%= yield %>
+		
+
+
+		
+
+																		<div class="navigation">
+									<div class="alignleft"></div>
+									<div class="alignright"></div>
+								</div>
+								
+										
+										
+						</div>
+						
+</body></html>

@@ -1,0 +1,26 @@
+<%
+if semester_obj != nil
+  semester = semester_obj.id
+  #FIXME - should be first line
+  current_cis_semester = course.cis_semesters.find(:first, :conditions => ['year = ? AND semester = ?', semester_obj.year, semester_obj.semester])
+  #current_cis_semester = course.cis_semesters[0]
+else
+  semester = -1
+end
+-%>
+
+<div class="course" id="<%= "coursediv_#{semester}_#{course.id}" %>">
+    <div class="course_desc"><%= course.title %></div>
+    <div class="course_code" >
+        <%= course.cis_subject.code %> <%= course.number %> <%= link_to_function 'sections>', visual_effect(:toggle_blind, "sects_#{semester}_#{course.id}"), :class => 'sections_link' %>
+    </div>
+
+    <hr />
+
+   <div style='display:none' class='sections_list' id='<%="sects_#{semester}_#{course.id}"%>'>
+      <% if current_cis_semester -%>
+         <%= render :partial => 'section_choice', :collection => current_cis_semester.cis_sections, :locals => {:semester => semester} %>
+      <% end -%>      
+   </div>
+</div>
+

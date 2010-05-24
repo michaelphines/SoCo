@@ -1,0 +1,33 @@
+<%= 
+if (@title.nil?) 
+image_tag "headers/myfriends.gif", :alt => 'My Friends' 
+else
+image_tag "headers/browse.gif", :alt => 'Browse Users' 
+end
+%>
+
+<% @title = @title || "Friends" -%>
+
+
+
+<br/><br/>
+
+<% form_tag({:action => 'search'}, {:method => 'get'}) do %>
+  <label for="q">Search All Users:<br/></label>
+  <input type="text" name="q" />
+
+ <input type="image" src="/images/headers/search.gif" value="Search">
+
+<% end %>
+<br/>
+<% if @friends.size == 0 -%>
+  <h5>None Found.</h5>
+<% else -%>
+  <div class="dt box">
+    <ul id="friend_list">
+      <%= render :partial => 'friend', :collection => @friends %>
+    </ul>
+  </div>
+<% end -%>
+
+<%= @paginate and will_paginate(@user_count, User.per_page, @friends_page) %>

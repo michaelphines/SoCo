@@ -1,0 +1,45 @@
+<% @title = "Online Help" -%>
+
+<html>
+<head>
+<% form_tag({:action => 'listfriends'}, {:method => 'get'}) do %>
+<% end %>
+</head>
+
+<div class= "listfriends">
+        
+        <h2><%= link_to 'Online Help', :controller => 'help', :action => 'index'%> > List Friends:</h2>
+
+        <li>'List Friends' page contains:</li>
+        <br/>
+        <ul> 
+        <li> - List of your Current Friends</li>
+
+        <li> - Link to Remove Current Friend</li>
+
+        <li> - Link to View Friend's Long-Term Schedule</li>
+
+        <li> - Search Input Field to scan for a friend</li>
+
+        <li> - Main Menu</li>
+        </ul>
+        <br/>
+        <li>Facts:</li>
+        <ul>
+        <li>1. If you search all users  for a new friend, the user, if found, will appear along with an Add
+        Link.</li>
+
+        <li> 2. You can only see the 'Long Term View' of current friends.</li>
+
+        <li> 3. If you are looking for a list of all users, click on the 'Search Users' icon in the Main
+        Menu.</li>
+        </ul>
+        
+        <br/>
+        
+        <%= image_tag "help/image004.gif", :align => 'center' %></span></p><span class='c51'>
+        
+        <br/>
+        <br/>
+        <%= link_to 'Back to Online Help', :controller => 'help', :action => 'index'%>
+        </div>

@@ -1,0 +1,22 @@
+<% @title = "Addons" -%>
+
+
+						<img alt="" src="images/taddons.gif" ><br>
+						<img alt="" src="images/taddons" width="1" height="22"><br>
+						<img alt="" src="images/1-p3.jpg" hspace="0" vspace="0" align="left" >
+						<strong>Welcome to SoCo!</strong><br>
+<br>						<img alt="" src="images/addons/addons.jpg" align=left>
+
+Soco is the new revolutionary <B>social course planner</B>, launched on April 27. More addons will be added to this section soon. <b>Stay tuned!</b>
+<br>
+<img alt="" src="images/spacer.gif" width="1" height="10"><br>
+<BR><br>
+<div class="addon_button">
+    <%= link_to image_tag("addons/facebook.png"), { :controller => 'facebook', :action => 'start_session' }, :title => 'Import Friends from Facebook' %>
+</div>
+
+
+
+<div class="addon_button">
+    <%= link_to image_tag("tell.a.friend.gif"), { :controller => 'addons', :action => 'tellafriend' }, :title => 'Tell a Friend' %>
+</div>

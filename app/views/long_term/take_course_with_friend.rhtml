@@ -1,0 +1,9 @@
+<% @title = "Take Course With Friends" -%>
+<h3>Please select your friends to take <em><%=h @course.to_s %></em> with you during <em><%=h @semester.to_s %></em></h3>
+<% form_tag :action => 'take_my_course_with_friend', :course_id => @course.id do %>
+    <ul>
+        <%= checkboxes_from_collection_for_multiple_select 'friends', @friends, 'id', 'to_s' %>
+    </ul>
+    <%= submit_tag 'Take course with selected friends' %>
+<% end %>
+

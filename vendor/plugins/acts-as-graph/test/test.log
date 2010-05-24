@@ -1,0 +1,5 @@
+# Logfile created on Thu Mar 22 17:18:22 -0500 2007 by logger.rb/1.5.2.9
+In active_record.rb
+Loading database.yml
+Loading schema.rb
+Creating dependencies table

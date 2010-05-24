@@ -1,0 +1,69 @@
+<%
+if semester_obj != nil
+  semester = semester_obj.id
+  current_cis_semester = course.cis_semesters.find(:first, :conditions => ['year = ? AND semester = ?', semester_obj.year, semester_obj.semester])
+else
+  semester = -1
+end
+-%>
+
+<div class="course" id="<%= "coursediv_#{semester}_#{course.id}" %>" style="<% if effect %>display:none;<% end%>">
+    <div class="course_code" >
+    <% if session[:user] == @user.id -%>
+        <%= link_to_remote( image_tag("course/delete2.png", :align => "right", :title => "Delete Course"),
+                  :url => {:action => "remove", :course_id => course.id, :semester_id => semester},
+                  :loading => "Element.show('getting_results'); Element.hide('loading_stopped')",
+					:complete => "if (prereq_request != undefined) { prereq_request.transport.abort() }; var prereq_request = " +
+					            remote_function(:url => { :action => "update_prerequisites" },
+					                            :complete => "prereq_request = undefined; Element.hide('getting_results'); Element.show('loading_stopped')")
+                  )
+        -%>
+    <% else -%>
+        <%= image_tag "course/pin_red.png", :align => "right" %>
+    <% end -%>
+      <br/>
+      <div><%= image_tag "course/documents.png", :style=> "vertical-align: center" %> <%=h course.to_s %></div>
+    </div>
+    <div class="course_desc"><b><%=h course.title %></b></div><br />
+    <div class="title">Prerequisites:</div>
+    <div class="course_prerequisites">
+      <div id="<%= "prerequisite_#{semester}_#{course.id}" %>" class="needs_prereq <% if course.dependencies_satisfied?(semester, @user) -%>hidden<% end -%>"><img src=images/not_satisfied.gif></div>
+      <%=h course.course_dependency.to_s %>
+    </div>
+    <div class="title">Friends Sharing:</div>
+    <div class="course_sharing">
+        <ul>
+        <% course.iterate_users_semesters(@user) do |shared_id,friend,friend_semester| %>
+           <li><%= if session[:user] == @user.id
+                    link_to '<img src=/images/course/delete.png width=9 align=justify>', {:action => 'delete_shared_course', :id => shared_id},
+                        {:confirm => "Are you sure that you do not want to take this course with this friend?",
+                         :title => "Do not take this course with this friend", :style => "color:white;"}
+                   end %>
+
+                   <%= link_to friend.to_s, {:controller => 'long_term', :action=> 'show', :id => friend.id}, :style => "color:white;" %>
+                   <% if not friend_semester.to_s.empty? %> - <%= "<a style=\"color:white;\"><i>(" + friend_semester.to_s %>)</a></i><% end %></li>
+        <% end %>
+        </ul>
+    </div>
+    <div class="links">
+        <%= link_to image_tag("course/friend.png"), {:action => 'take_course_with_friend', :course_id => course.id, :friend_id => @user.id, :semester_id => semester}, :title => "Take with a friend" %>
+
+        <%= link_to image_tag("course/courseinfo.png"), "http://courses.uiuc.edu/cis/catalog/urbana/%i/%s/%s/%03i.html" % [$CURRENT_CIS_YEAR, $CURRENT_CIS_SEMESTER_WORD, course.cis_subject.code, course.number], :popup => true, :title => "Course Catalog" %>
+
+        <%= link_to_unless current_cis_semester.nil?, image_tag("course/schedule.png"), ((current_cis_semester.nil? and "#") or "http://courses.uiuc.edu/cis/schedule/urbana/%i/%s/%s/%03i.html" % [current_cis_semester.year, current_cis_semester.semester_word, course.cis_subject.code, course.number.to_s]), :popup => true, :title => "Course Schedule" %>
+
+        <%= link_to image_tag("course/coursefire.png"), "http://www.coursefire.com/view_stats.php?courseID=%s%03i" % [course.cis_subject.code, course.number], :popup => true, :title => "CourseFire" %>
+
+        <%= link_to image_tag("course/reviews.png"), {:controller => 'course_reviews', :action => 'list', :id => course.id}, :title => "Course Reviews", :popup => ['course_review_window', 'height=500,width=411,scrollbars=yes'] %>
+   </div>
+</div>
+
+<% if session[:user] == @user.id %>
+  <% if effect %>
+  <script language="javascript" type="text/javascript">
+      <%= visual_effect :blind_down, "coursediv_#{semester}_#{course.id}" %>
+  </script>
+  <% end %>
+
+  <%= draggable_element "coursediv_#{semester}_#{course.id}", :revert => true %>
+<% end %>

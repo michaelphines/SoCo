@@ -1,0 +1,42 @@
+<% @title = "Online Help" -%>
+
+<html>
+<head>
+<% form_tag({:action => 'editprofile'}, {:method => 'get'}) do %>
+<% end %>
+</head>
+
+<div class= "editprofile">
+        <h2><%= link_to 'Online Help', :controller => 'help', :action => 'index'%> > Edit My Profile:</h2>
+
+        <li>'Edit Profile' page contains:</li>
+        <br/>
+            <ul>
+                <li> - Your Account Information</li>
+
+                <li> - Main Menu</li>
+            </ul>
+        </li>
+        <br/>
+        <li>Facts:</li>
+        <br/>
+            <ul>
+            <li> 1. This page is loaded with your current information.</li>
+
+            <li> 2. Sorry, you cannot change your username once registered.</li>
+
+            <li> 3. You do not need to enter your passwords if you do not want to change it. If you leave the password
+            fields blank, your previous password will remain, it will not be written over.</li>
+
+            <li> 4. Click 'Save' to preserve your changes, or Cancel' to return to your profile.</li>
+            
+            </ul>
+            
+            <br/>
+
+         <%= image_tag "help/image003.gif", :align => 'center' %>
+            
+        <br/>
+        <br/>
+        <%= link_to 'Back to Online Help', :controller => 'help', :action => 'index'%>
+        </div>

@@ -1,0 +1,48 @@
+<% @title = "Online Help" -%>
+
+<html>
+<head>
+<% form_tag({:action => 'addons'}, {:method => 'get'}) do %>
+<% end %>
+</head>
+
+<div class="addons">
+<h2><%= link_to 'Online Help', :controller => 'help', :action => 'index'%> > Add
+        Ons:</h2>
+
+        <li>'Add Ons' page contains:</li>
+        <br/>
+        <ul>
+        <li> Link to Facebook Sync</li>
+
+        <li>Tell-A-Friend</li>
+
+        <li>Main Menu</li>
+        </ul>
+        <br/>
+        <li> Facts:</li>
+
+        <ul>
+        <li>1. Question: What is does the Facebook link do?</li>
+
+        <li><ul> - Answer: The Facebook
+        link directs you to Facebook where it will prompt you to
+        login with your Facebook email and password, or register if
+        you do not have an account with Facebook.</li>
+        <br/>
+        <li>- Upon login, it
+        will compare registered Soco users with your Facebook
+        friends, and automatically add all of your Facebook friends
+        that are also registered with Soco to your Soco list of
+        friends.</li></ul>
+        <br/>
+        <li>2. Tell-A-Friend:</li>
+        <ul><li> - Send a message to a friend's email address 
+        with the course, a description of a course, and invite them to take the course with you.</li></ul>
+        <br/>
+        <%= image_tag "help/image017.gif", :align => 'center' %>
+             
+        <br/>
+        <br/>
+        <%= link_to 'Back to Online Help', :controller => 'help', :action => 'index'%> 
+        </div>

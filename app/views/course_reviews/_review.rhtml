@@ -1,0 +1,27 @@
+<div class='content'>
+    <div class='topic'>
+        <div class='info'>
+            <span><%= time_ago_in_words review.created_at %> ago</span>&nbsp; Author: <%=h review.user.to_s %>
+        </div>
+        <h2>
+            <a rel='bookmark'><%= h review.title %></a>
+        </h2>
+    </div>
+    <div class='text'>
+        <%=
+          auto_link(simple_format(sanitize(review.body)), :all, :target => '_blank') do |text|
+            truncate(text, 40)
+          end
+        %>
+        <div class='spacer'>
+            <br style='clear: both;' />
+        </div>
+        <div class='comment'>
+            <a href="#reply">reply</a>
+        </div>
+    </div>
+</div>
+<br/>
+
+
+

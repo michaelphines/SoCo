@@ -1,0 +1,53 @@
+<% #Angel' mental note: this is GUI 2.4 -%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Soco Project - <%=h @title || "[soco]" %></title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <%= stylesheet_link_tag 'style' %>
+    <%= stylesheet_link_tag 'application' %>
+    <!--[if IE]>
+      <%= stylesheet_link_tag 'style_ie' %>
+    <![endif]-->
+    <%= stylesheet_link_tag controller.controller_name %>
+    <%= javascript_include_tag :defaults %>
+</head>
+<body>
+	<div class="dt main" >
+		<div class="dt header" >
+			<div class="dr">
+				<div class="dc" >
+					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+						   codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,24"
+						   width="685" height="261">
+						<param name="movie" value="/flash/menu_silent.swf?button=<%= @flash_controller_id %>" />
+						<param name="quality" value="high" />
+						<param name="menu" value="false" />
+						<embed quality="high" type="application/x-shockwave-flash" menu="false" pluginspace="http://www.macromedia.com/go/getflashplayer" src="/flash/menu_silent.swf?button=<%= @flash_controller_id %>" width="685" height="261" />
+				   </object>
+				</div>
+			</div>
+		</div>
+		<div class="dt cont" style="padding:0;" >
+			<div style="margin: 30px 35px 30px 33px;">
+                <%= render :partial => 'layouts/flashes' %>
+		
+		        <%= yield %>
+
+			</div>
+		</div>
+		<div class="dt footer" >
+			<div class="dr">
+				<div class="dc col1" >
+					<div style="margin: 10px 0px 0px 34px;"><a href="https://agora.cs.uiuc.edu/display/cs428/SoCo+%28Social+Course+Planner%29" target="_blank">Soco Group, CS428 2007</a></div>
+				</div>
+				<div class="dc col2" >
+					<div style="margin: 10px 38px 0px 0px;">You are logged in as
+					<strong><%=h session[:username] %></strong></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<% @title = "Long Term Planner of " << @user.to_s -%>
+<div id="course_bin">
+  <div id="add_course">
+        <strong>Course Bin:</strong>
+  </div>
+  <div id="course_bin_courses">
+    <%= render :partial => 'course', :collection => @course_bin_courses, :locals => {:semester_obj => nil, :effect => false} %>
+  </div>
+  <p class="clear"></p>
+</div>
+
+<script type="text/javascript" language="javascript">
+  Position.includeScrollOffsets = true;
+</script>
+
+<div id="semesters">
+  <table>
+    <tr>
+      <%= render :partial => 'semester', :collection => @semesters %>
+    </tr>
+  </table>
+</div>
+

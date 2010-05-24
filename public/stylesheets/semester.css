@@ -1,0 +1,253 @@
+.main > div.cont
+{
+	position: relative;
+ 	-moz-border-radius: 10px;
+}
+
+#semester_title {
+	width: 100%;
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	padding: 0.5em 0;
+}
+
+#throbber {
+	width: 100%;
+	text-align: center;
+}
+
+#sched_and_courses {
+	width: 80em;
+	height: 123em;
+}
+
+#courses {
+	width: 23em;
+	float: left;
+	text-align: center;
+}
+
+.course {
+	border: 1px solid black;
+	margin-bottom: 1em;
+}
+
+#schedule_container {
+
+	background-color: #dcdcdc;
+	border: 2px solid black;
+	width: 56em;
+	background-color: #dcdcdc;
+	float: right;
+
+	margin-bottom: 10em;
+}
+
+#schedule_container_inner {
+	top: 2em;
+	bottom: 0;
+	background-color: white;
+}
+
+/* schedule link in semester container head */
+.semester_link {
+	font-size: 12pt;
+}
+
+/* semester schedule table */
+#schedule_container table {
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+#schedule_container table tr td {
+	margin-top: 1em;
+}
+
+#schedule_container table td, table th {
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    width: 8em;
+}
+
+#schedule_container table th {
+	text-align: center;
+	border-bottom: 1px dashed black;
+}
+
+#schedule_container table tr:first-child {
+    background-color: #dcdcdc;
+    z-index: 10;
+}
+
+#schedule_container table #times_row {
+	height: 80em;
+
+}
+
+#schedule_container table .section {
+    width: 7em;
+    background-color: #ffb;
+    padding: 2px;
+    margin-left: 2px;
+}
+
+#schedule_container table .times, table .times div {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-align: right;
+    padding: 1px;
+}
+
+#schedule_container table .times {
+    border-right: 1px dashed black;
+}
+
+.time {
+    height: 7.85em;
+}
+
+.sections_list {
+	font-size: .9em;
+	padding: 2px;
+	text-align: left;
+}
+
+.section_selected, .section_unselected {
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	padding: 0.5em 0;
+	color: black;
+}
+
+.section_selected {
+	/*background-color: #ffb;*/
+	color: #eb6800;
+
+	border-right: 3px solid #eb6800;
+}
+.section_unselected {
+}
+
+#schedule_close_button {
+	text-align: right;
+	position: absolute;
+	right: 1em;
+}
+
+.course_desc {
+	font-weight: bold;
+}
+
+.course {
+	background-color: #dcdcdc;
+}
+
+#generate_label {
+	font-weight: bold;
+}
+
+.section_course_title {
+	font-weight: bold;
+}
+
+.preview {
+	border: 1px solid black;
+	position: relative;
+	background-color: white;
+	margin: 1em;
+	margin-bottom: 0;
+}
+
+.preview_outer {
+	float: left;
+	background-color: white;
+	margin: 1em;
+	color: black;
+}
+
+.preview_outer:hover {
+	background-color: #1368B0;
+	color: white;
+}
+
+.preview_section {
+	background-color: #eb6800;
+	position: absolute;
+}
+
+.preview_number {
+	font-size: 0.8em;
+}
+
+#previews_window {
+	z-index: 100;
+	text-align: center;
+	width: 78em;
+	height: 16em;
+	position: fixed;
+	background-color: white;
+	border: 1px solid black;
+	bottom: 0;
+	border-bottom: 0;
+ 	-moz-border-radius-topleft: 10px;
+ 	-moz-border-radius-topright: 10px;
+}
+
+#semester_page_top {
+	text-align: center;
+}
+
+#previews_window_inner {
+	background-color: #dcdcdc;
+	position: absolute;
+	top: 1.5em;
+	bottom: 1.5em;
+	left: 1.5em;
+	right: 1.5em;
+}
+
+#previews_window_close {
+	margin: 4px;
+}
+
+#previews_prev, #previews_next {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1.5em;
+	text-decoration: none;
+	color: black;
+ 	-moz-border-radius-topright: 10px;
+ 	-moz-border-radius-topleft: 10px;
+}
+#previews_prev:hover, #previews_next:hover {
+	background-color: #1368B0;
+	color: white;
+}
+#previews_prev {
+	left: 0;
+}
+#previews_next {
+	right: 0;
+}
+
+#generator_error {
+	position: absolute;
+	height: 1.5em;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: black;
+	text-decoration: none;
+ 	-moz-border-radius: 10px;
+}
+
+#generator_error:hover {
+	background-color: #1368B0;
+	color: white;
+}

@@ -1,0 +1,45 @@
+cs225:
+  id: 1
+  node_type: "COURSE"
+
+math412:
+  id: 2
+  node_type: "COURSE"
+
+cs473:
+  id: 3
+  node_type: "COURSE"
+  
+phych100:
+  id: 4
+  node_type: "COURSE"
+  
+cs428:
+  id: 5
+  node_type: "COURSE"
+  
+cs411:
+  id: 6
+  node_type: "COURSE"
+  
+cs125:
+  id: 7
+  node_type: "COURSE"  
+  
+cs173:
+  id: 8
+  node_type: "COURSE"
+  
+psych100_or:
+  id: 9
+  node_type: "OR"  
+  
+cs473_and:
+  id: 10
+  node_type: "AND"
+  
+math412_concurrent:
+  id: 11
+  node_type: "CONCURRENT"
+
+  

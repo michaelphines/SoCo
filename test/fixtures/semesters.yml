@@ -1,0 +1,77 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+james_first_sem:
+  id: 1
+  user_id: 1
+  year: 2007
+  semester: SP
+james_second_sem:
+  id: 2
+  user_id: 1
+  year: 2007
+  semester: FA
+tanmay_first_sem:
+  id: 3
+  user_id: 4
+  year: 2007
+  semester: SP
+tanmay_second_sem:
+  id: 4
+  user_id: 4
+  year: 2007
+  semester: FA  
+  
+  
+ben1:
+  id: 5
+  user_id: 13
+  year: 2003
+  semester: FA
+  
+ben2:
+  id: 6
+  user_id: 13
+  year: 2004
+  semester: SP  
+
+ben3:
+  id: 7
+  user_id: 13
+  year: 2004
+  semester: FA  
+  
+ben4:
+  id: 8
+  user_id: 13
+  year: 2005
+  semester: SP  
+  
+ben5:
+  id: 9
+  user_id: 13
+  year: 2005
+  semester: FA  
+  
+ben6:
+  id: 10
+  user_id: 13
+  year: 2006
+  semester: SP  
+  
+  
+ben7:
+  id: 11
+  user_id: 13
+  year: 2006
+  semester: FA  
+  
+ben8:
+  id: 12
+  user_id: 13
+  year: 2007
+  semester: SP  
+  
+overflow:
+  id: 13
+  user_id: 2
+  year: 2007
+  semester: SP  

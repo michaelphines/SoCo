@@ -1,0 +1,5 @@
+<ul class="course_list">
+<% for course in @courses -%>
+    <li class="autocomplete_course"><%=h course.code %> <%=h ( course.has_attribute?('number') ? course.number : '' ) %><% if course.has_attribute?('title') %> <br/> <em><%=h course.title %></em><% end %></li>
+<% end -%>
+</ul>

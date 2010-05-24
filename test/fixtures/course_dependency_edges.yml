@@ -1,0 +1,40 @@
+cs225_cs173:
+  parent_id: 1
+  child_id: 8
+  
+cs225_cs125:
+  parent_id: 1
+  child_id: 7
+  
+psych100_or:
+  parent_id: 4
+  child_id: 9
+  
+
+psych100_or1:
+  parent_id: 9
+  child_id: 1
+
+psych100_or2:
+  parent_id: 9
+  child_id: 8  
+  
+cs473_and:
+  parent_id: 3
+  child_id: 10
+  
+cs473_and1:
+  parent_id: 10
+  child_id: 1
+  
+cs473_and2:
+  parent_id: 10
+  child_id: 8
+ 
+math412_con:
+  parent_id: 2
+  child_id: 11
+  
+math412_con1:
+  parent_id: 11
+  child_id: 3

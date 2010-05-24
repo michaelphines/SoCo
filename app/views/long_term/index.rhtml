@@ -1,0 +1,57 @@
+<% @title = "Long Term Planner of " << @user.to_s -%>
+<div id="throbber">
+  <span id="loading_stopped"><%= image_tag "loading_stopped.gif" %></span>
+  <span id="getting_results" style="display:none;"><%= image_tag "loading.gif" %></span>
+</div>
+<div id="course_bin">
+  <div id="add_course">
+    <% form_remote_tag :url => {:action => 'add_class'}, :html => {:name => 'class_autocomplete'},
+            :loading => "reset(); Element.show('getting_results'); Element.hide('loading_stopped')", 
+            :complete => "Element.hide('getting_results'); Element.show('loading_stopped')" do %> 
+        <strong>Add Course to Course Bin:</strong>
+        <%= text_field_with_auto_complete :course, :number,
+            { :style => "width: 10em" },
+            { :after_update_element => 'function(element,value){ element.value = value.innerHTML.match(/^[A-Z]*\s*\d*/); document.class_autocomplete.onsubmit(); }' }
+            %>
+        <%= image_submit_tag "add.gif" %>
+    <% end %>
+  </div>
+  <div id="course_bin_courses">
+    <%= render :partial => 'course', :collection => @course_bin_courses, :locals => {:semester_obj => nil, :effect => false} %>
+  </div>
+  <p class="clear"></p>
+</div>
+<%= drop_receiving_element("course_bin",
+    :accept => 'course', 
+    :position => 'bottom',
+    :update => "course_bin_courses",
+    :url => { :action => 'update_semester'},
+    :loading => "element.style.display = 'none'; Element.show('getting_results'); Element.hide('loading_stopped')",
+    :complete => "if (prereq_request != undefined) { prereq_request.transport.abort() }; var prereq_request = " +
+                remote_function(:url => { :action => "update_prerequisites" },
+                                :complete => "prereq_request = undefined; Element.hide('getting_results'); Element.show('loading_stopped')"),
+    :hoverclass => "drop_hover",
+    :with => "'id=' + encodeURIComponent(element.id) + '&new_semester=-1'") %>
+
+<script type="text/javascript" language="javascript">
+  Position.includeScrollOffsets = true;
+</script>
+
+<div id="semesters">
+  <table>
+    <tr>
+      <%= render :partial => 'semester', :collection => @semesters %>
+      <td>
+        <div class="semester">
+            <div class="semester_header">
+               <em>Need More?</em>
+            </div>
+            <hr/>
+            <%= image_tag "star_green.png", :style => "vertical-align: middle" %> <%= link_to "Add Semester", :action => 'push_semester' %><br/>
+            <%= image_tag "star_red.png", :style => "vertical-align: middle" %> <%= link_to "Delete Last Semester", {:action => 'pop_semester'}, :confirm => "This will delete your last semester, its courses, and its schedule.  Are you sure?" %>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+

@@ -1,0 +1,37 @@
+<% @title = "Online Help" -%>
+
+<html>
+<head>
+<% form_tag({:action => 'profile'}, {:method => 'get'}) do %>
+<% end %>
+</head>
+
+<div class="profile">
+       <h2><%= link_to 'Online Help', :controller => 'help', :action => 'index'%> > My Profile:</h2>
+
+        <li> 'My Profile' page contains:</li>
+		<br/>
+			<ul> 
+				<li> - Your Account Information</li>
+
+				<li> - Your Current Friends</li>
+
+        		<li> - Link to View Friend's Profile</li>
+
+	       		<li> - Link to Delete Friend</li>
+
+	        	<li> - Link to View Friend's Long-Term Schedule</li>
+
+	        	<li> - Edit Your Profile Link</li>
+
+    	    	<li> - Delete Your Account Link</li>
+
+        		<li> - Main Menu</li>
+        	</ul>
+        </li>
+        <%= image_tag "help/image002.gif", :align => 'center' %>
+            
+        <br/>
+        <br/>
+        <%= link_to 'Back to Online Help', :controller => 'help', :action => 'index'%>    
+        </div>

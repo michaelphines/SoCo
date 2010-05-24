@@ -1,0 +1,781 @@
+--- 
+majors_180: 
+  name: Recreation, Sport, and Tourism
+  id: "180"
+  college_id: "10"
+majors_152: 
+  name: Teaching of Spanish
+  id: "152"
+  college_id: "9"
+majors_124: 
+  name: Astronomy
+  id: "124"
+  college_id: "9"
+majors_097: 
+  name: Nondegree
+  id: "97"
+  college_id: "7"
+majors_010: 
+  name: Agr Engineering & Agr Science
+  id: "10"
+  college_id: "1"
+majors_069: 
+  name: Open Studies
+  id: "69"
+  college_id: "5"
+majors_181: 
+  name: Rehabilitation
+  id: "181"
+  college_id: "10"
+majors_153: 
+  name: Italian
+  id: "153"
+  college_id: "9"
+majors_125: 
+  name: Biochemistry
+  id: "125"
+  college_id: "9"
+majors_098: 
+  name: General Curriculum
+  id: "98"
+  college_id: "7"
+majors_011: 
+  name: Agr & Environmental Cmc & Educ
+  id: "11"
+  college_id: "1"
+majors_182: 
+  name: Veterinary Pathobiology
+  id: "182"
+  college_id: "11"
+majors_154: 
+  name: Spanish
+  id: "154"
+  college_id: "9"
+majors_126: 
+  name: History
+  id: "126"
+  college_id: "9"
+majors_012: 
+  name: Human Development & Family St
+  id: "12"
+  college_id: "1"
+majors_040: 
+  name: Theoretical & Applied Mechans
+  id: "40"
+  college_id: "4"
+majors_099: 
+  name: Law
+  id: "99"
+  college_id: "8"
+majors_183: 
+  name: Veterinary Medicine
+  id: "183"
+  college_id: "11"
+majors_155: 
+  name: Portuguese
+  id: "155"
+  college_id: "9"
+majors_127: 
+  name: American Civilization
+  id: "127"
+  college_id: "9"
+majors_013: 
+  name: Agricultural Education
+  id: "13"
+  college_id: "1"
+majors_041: 
+  name: Agricultural Engineering
+  id: "41"
+  college_id: "4"
+majors_184: 
+  name: Veterinary Medical Science
+  id: "184"
+  college_id: "11"
+majors_156: 
+  name: Molecular & Integrative Physi
+  id: "156"
+  college_id: "9"
+majors_128: 
+  name: African Studies
+  id: "128"
+  college_id: "9"
+majors_014: 
+  name: Human & Community Development
+  id: "14"
+  college_id: "1"
+majors_070: 
+  name: Musicology
+  id: "70"
+  college_id: "5"
+majors_042: 
+  name: Nondegree
+  id: "42"
+  college_id: "4"
+majors_185: 
+  name: Veterinary Clinical Medicine
+  id: "185"
+  college_id: "11"
+majors_157: 
+  name: Geology
+  id: "157"
+  college_id: "9"
+majors_129: 
+  name: Speech Communication
+  id: "129"
+  college_id: "9"
+majors_071: 
+  name: Graphic Design
+  id: "71"
+  college_id: "5"
+majors_043: 
+  name: Engineering Physics
+  id: "43"
+  college_id: "4"
+majors_015: 
+  name: Crop Sciences
+  id: "15"
+  college_id: "1"
+majors_186: 
+  name: Veterinary Biosciences
+  id: "186"
+  college_id: "11"
+majors_158: 
+  name: Chemical Engineering
+  id: "158"
+  college_id: "9"
+majors_072: 
+  name: Crafts
+  id: "72"
+  college_id: "5"
+majors_044: 
+  name: Physics
+  id: "44"
+  college_id: "4"
+majors_016: 
+  name: Natural Resrcs & Environ Sci
+  id: "16"
+  college_id: "1"
+majors_187: 
+  name: Professional Pilot
+  id: "187"
+  college_id: "12"
+majors_159: 
+  name: Political Science
+  id: "159"
+  college_id: "9"
+majors_073: 
+  name: History of Art
+  id: "73"
+  college_id: "5"
+majors_045: 
+  name: Civil Engineering
+  id: "45"
+  college_id: "4"
+majors_100: 
+  name: Anthropology
+  id: "100"
+  college_id: "9"
+majors_017: 
+  name: Horticulture
+  id: "17"
+  college_id: "1"
+majors_188: 
+  name: Aviation Human Factors
+  id: "188"
+  college_id: "12"
+majors_074: 
+  name: Photography
+  id: "74"
+  college_id: "5"
+majors_046: 
+  name: Environ Engr in Civil Engr
+  id: "46"
+  college_id: "4"
+majors_101: 
+  name: Atmospheric Sciences
+  id: "101"
+  college_id: "9"
+majors_018: 
+  name: Natural Res & Env Sciences
+  id: "18"
+  college_id: "1"
+majors_189: 
+  name: Human Factors
+  id: "189"
+  college_id: "12"
+majors_130: 
+  name: Religious Studies
+  id: "130"
+  college_id: "9"
+majors_075: 
+  name: Industrial Design
+  id: "75"
+  college_id: "5"
+majors_047: 
+  name: Environ Science in Civil Engr
+  id: "47"
+  college_id: "4"
+majors_102: 
+  name: Mathematics
+  id: "102"
+  college_id: "9"
+majors_019: 
+  name: Nutritional Sciences
+  id: "19"
+  college_id: "1"
+majors_131: 
+  name: English
+  id: "131"
+  college_id: "9"
+majors_076: 
+  name: Painting
+  id: "76"
+  college_id: "5"
+majors_048: 
+  name: Bioengineering
+  id: "48"
+  college_id: "4"
+majors_103: 
+  name: Actuarial Science
+  id: "103"
+  college_id: "9"
+majors_160: 
+  name: Philosophy
+  id: "160"
+  college_id: "9"
+majors_132: 
+  name: Rhetoric
+  id: "132"
+  college_id: "9"
+majors_077: 
+  name: Sculpture
+  id: "77"
+  college_id: "5"
+majors_049: 
+  name: General Engineering
+  id: "49"
+  college_id: "4"
+majors_104: 
+  name: Math & Computer Science
+  id: "104"
+  college_id: "9"
+majors_161: 
+  name: Latin American Studies
+  id: "161"
+  college_id: "9"
+majors_133: 
+  name: Creative Writing
+  id: "133"
+  college_id: "9"
+majors_105: 
+  name: Teaching of Mathematics
+  id: "105"
+  college_id: "9"
+majors_078: 
+  name: Art Education
+  id: "78"
+  college_id: "5"
+majors_190: 
+  name: Nondegree
+  id: "190"
+  college_id: "12"
+majors_162: 
+  name: Teaching of English Sec Lang
+  id: "162"
+  college_id: "9"
+majors_134: 
+  name: Classics
+  id: "134"
+  college_id: "9"
+majors_106: 
+  name: Applied Mathematics
+  id: "106"
+  college_id: "9"
+majors_020: 
+  name: Business Administration (MBA)
+  id: "20"
+  college_id: "2"
+majors_079: 
+  name: Art History
+  id: "79"
+  college_id: "5"
+majors_191: 
+  name: Human Res & Industrial Rels
+  id: "191"
+  college_id: "13"
+majors_163: 
+  name: Comparative Literature
+  id: "163"
+  college_id: "9"
+majors_135: 
+  name: Teaching of Latin
+  id: "135"
+  college_id: "9"
+majors_107: 
+  name: Psychology
+  id: "107"
+  college_id: "9"
+majors_021: 
+  name: Finance
+  id: "21"
+  college_id: "2"
+majors_192: 
+  name: Social Work
+  id: "192"
+  college_id: "14"
+majors_164: 
+  name: Linguistics
+  id: "164"
+  college_id: "9"
+majors_136: 
+  name: Classical Philology
+  id: "136"
+  college_id: "9"
+majors_108: 
+  name: Sociology
+  id: "108"
+  college_id: "9"
+majors_050: 
+  name: Industrial Engineering
+  id: "50"
+  college_id: "4"
+majors_022: 
+  name: Accountancy
+  id: "22"
+  college_id: "2"
+majors_193: 
+  name: Nondegree-CE
+  id: "193"
+  college_id: "15"
+majors_165: 
+  name: Geography
+  id: "165"
+  college_id: "9"
+majors_137: 
+  name: Russian & E European Studies
+  id: "137"
+  college_id: "9"
+majors_109: 
+  name: Entomology
+  id: "109"
+  college_id: "9"
+majors_051: 
+  name: Systems & Entrepreneurial Engr
+  id: "51"
+  college_id: "4"
+majors_023: 
+  name: Business Administration
+  id: "23"
+  college_id: "2"
+majors_194: 
+  name: Library & Information Science
+  id: "194"
+  college_id: "16"
+majors_166: 
+  name: Teaching of German
+  id: "166"
+  college_id: "9"
+majors_138: 
+  name: Russian, E Eur, Eurasian St
+  id: "138"
+  college_id: "9"
+majors_052: 
+  name: Computer Science
+  id: "52"
+  college_id: "4"
+majors_024: 
+  name: Economics
+  id: "24"
+  college_id: "2"
+majors_080: 
+  name: Art and Design
+  id: "80"
+  college_id: "5"
+majors_195: 
+  name: Nondegree
+  id: "195"
+  college_id: "17"
+majors_167: 
+  name: Germanic Lang & Lit
+  id: "167"
+  college_id: "9"
+majors_139: 
+  name: Finance
+  id: "139"
+  college_id: "9"
+majors_053: 
+  name: Bioinformatics
+  id: "53"
+  college_id: "4"
+majors_025: 
+  name: Nondegree
+  id: "25"
+  college_id: "2"
+majors_081: 
+  name: General Curriculum
+  id: "81"
+  college_id: "5"
+majors_168: 
+  name: German
+  id: "168"
+  college_id: "9"
+majors_054: 
+  name: Aero & Astro Engineering
+  id: "54"
+  college_id: "4"
+majors_026: 
+  name: Curric Unassigned
+  id: "26"
+  college_id: "2"
+majors_082: 
+  name: Art Foundation
+  id: "82"
+  college_id: "5"
+majors_169: 
+  name: Microbiology
+  id: "169"
+  college_id: "9"
+majors_055: 
+  name: Aerospace Engineering
+  id: "55"
+  college_id: "4"
+majors_110: 
+  name: E Asian Languages & Cultures
+  id: "110"
+  college_id: "9"
+majors_027: 
+  name: Education General
+  id: "27"
+  college_id: "3"
+majors_083: 
+  name: Landscape Architecture
+  id: "83"
+  college_id: "5"
+majors_056: 
+  name: Mechanical Engineering
+  id: "56"
+  college_id: "4"
+majors_111: 
+  name: Asian Studies
+  id: "111"
+  college_id: "9"
+majors_028: 
+  name: Pre-Early Chld/Elem Ed/Spec Ed
+  id: "28"
+  college_id: "3"
+majors_084: 
+  name: Urban Planning
+  id: "84"
+  college_id: "5"
+majors_140: 
+  name: History of Art
+  id: "140"
+  college_id: "9"
+majors_112: 
+  name: Plant Biology
+  id: "112"
+  college_id: "9"
+majors_029: 
+  name: Special Education
+  id: "29"
+  college_id: "3"
+majors_085: 
+  name: Regional Planning
+  id: "85"
+  college_id: "5"
+majors_057: 
+  name: Materials Science & Engr
+  id: "57"
+  college_id: "4"
+majors_141: 
+  name: Music
+  id: "141"
+  college_id: "9"
+majors_113: 
+  name: Integrative Biology
+  id: "113"
+  college_id: "9"
+majors_086: 
+  name: Architectural Studies
+  id: "86"
+  college_id: "5"
+majors_058: 
+  name: Computer Engineering
+  id: "58"
+  college_id: "4"
+majors_170: 
+  name: Russian Lang & Literature
+  id: "170"
+  college_id: "9"
+majors_142: 
+  name: International Studies
+  id: "142"
+  college_id: "9"
+majors_087: 
+  name: Architecture
+  id: "87"
+  college_id: "5"
+majors_059: 
+  name: Electrical Engineering
+  id: "59"
+  college_id: "4"
+majors_114: 
+  name: Biology
+  id: "114"
+  college_id: "9"
+majors_171: 
+  name: Slavic Languages & Literature
+  id: "171"
+  college_id: "9"
+majors_143: 
+  name: Humanities
+  id: "143"
+  college_id: "9"
+majors_115: 
+  name: Teaching of Biological Science
+  id: "115"
+  college_id: "9"
+majors_088: 
+  name: Dance
+  id: "88"
+  college_id: "5"
+majors_001: 
+  name: Agribusiness, Farm & Financial
+  id: "1"
+  college_id: "1"
+majors_172: 
+  name: Teaching of French
+  id: "172"
+  college_id: "9"
+majors_144: 
+  name: Individual Plans of Study
+  id: "144"
+  college_id: "9"
+majors_116: 
+  name: Economics
+  id: "116"
+  college_id: "9"
+majors_030: 
+  name: Early Childhood Education
+  id: "30"
+  college_id: "3"
+majors_089: 
+  name: Theatre
+  id: "89"
+  college_id: "5"
+majors_002: 
+  name: Agribusiness, Farm & Financial
+  id: "2"
+  college_id: "1"
+majors_173: 
+  name: French
+  id: "173"
+  college_id: "9"
+majors_145: 
+  name: Interdisciplinary
+  id: "145"
+  college_id: "9"
+majors_117: 
+  name: Chemistry
+  id: "117"
+  college_id: "9"
+majors_031: 
+  name: Elementary Education
+  id: "31"
+  college_id: "3"
+majors_003: 
+  name: Consumer and Textile Marketing
+  id: "3"
+  college_id: "1"
+majors_174: 
+  name: Community Health
+  id: "174"
+  college_id: "10"
+majors_146: 
+  name: Physics
+  id: "146"
+  college_id: "9"
+majors_118: 
+  name: Teaching of Chemistry
+  id: "118"
+  college_id: "9"
+majors_032: 
+  name: Secondary & Continuing Educ
+  id: "32"
+  college_id: "3"
+majors_004: 
+  name: Intl, Resource, Consumer Econ
+  id: "4"
+  college_id: "1"
+majors_060: 
+  name: Electrical & Computer Engr
+  id: "60"
+  college_id: "4"
+majors_175: 
+  name: Kinesiology
+  id: "175"
+  college_id: "10"
+majors_147: 
+  name: Nondegree
+  id: "147"
+  college_id: "9"
+majors_119: 
+  name: Chemical Physics
+  id: "119"
+  college_id: "9"
+majors_033: 
+  name: Educational Psychology
+  id: "33"
+  college_id: "3"
+majors_005: 
+  name: Agr & Consumer Economics
+  id: "5"
+  college_id: "1"
+majors_061: 
+  name: Nuclear Engineering
+  id: "61"
+  college_id: "4"
+majors_176: 
+  name: Audiology
+  id: "176"
+  college_id: "10"
+majors_148: 
+  name: General Curriculum
+  id: "148"
+  college_id: "9"
+majors_034: 
+  name: Educational Policy Studies
+  id: "34"
+  college_id: "3"
+majors_006: 
+  name: Nondegree
+  id: "6"
+  college_id: "1"
+majors_090: 
+  name: Nondegree
+  id: "90"
+  college_id: "6"
+majors_062: 
+  name: Nondegree
+  id: "62"
+  college_id: "5"
+majors_177: 
+  name: Speech & Hearing Science
+  id: "177"
+  college_id: "10"
+majors_149: 
+  name: Statistics
+  id: "149"
+  college_id: "9"
+majors_035: 
+  name: Ed Organization and Leadership
+  id: "35"
+  college_id: "3"
+majors_007: 
+  name: Animal Sciences
+  id: "7"
+  college_id: "1"
+majors_091: 
+  name: Media Studies
+  id: "91"
+  college_id: "7"
+majors_063: 
+  name: Music
+  id: "63"
+  college_id: "5"
+majors_178: 
+  name: Nondegree
+  id: "178"
+  college_id: "10"
+majors_008: 
+  name: Food Science & Human Nutrition
+  id: "8"
+  college_id: "1"
+majors_092: 
+  name: Communications
+  id: "92"
+  college_id: "7"
+majors_064: 
+  name: Music Education
+  id: "64"
+  college_id: "5"
+majors_036: 
+  name: Education
+  id: "36"
+  college_id: "3"
+majors_179: 
+  name: Leisure Studies
+  id: "179"
+  college_id: "10"
+majors_120: 
+  name: Molecular and Cellular Biology
+  id: "120"
+  college_id: "9"
+majors_009: 
+  name: Technical Systems Management
+  id: "9"
+  college_id: "1"
+majors_093: 
+  name: Advertising
+  id: "93"
+  college_id: "7"
+majors_065: 
+  name: Voice
+  id: "65"
+  college_id: "5"
+majors_037: 
+  name: Educ Voc Tech
+  id: "37"
+  college_id: "3"
+majors_121: 
+  name: Molecular&Cell Bio-undeclared
+  id: "121"
+  college_id: "9"
+majors_094: 
+  name: News-Editorial
+  id: "94"
+  college_id: "7"
+majors_066: 
+  name: Instrumental Music
+  id: "66"
+  college_id: "5"
+majors_038: 
+  name: Human Resource Education
+  id: "38"
+  college_id: "3"
+majors_150: 
+  name: Statistics & Computer Science
+  id: "150"
+  college_id: "9"
+majors_122: 
+  name: Biophysics & Computnl Biology
+  id: "122"
+  college_id: "9"
+majors_095: 
+  name: Broadcast Journalism
+  id: "95"
+  college_id: "7"
+majors_067: 
+  name: Music Composition
+  id: "67"
+  college_id: "5"
+majors_039: 
+  name: Engineering Mechanics
+  id: "39"
+  college_id: "4"
+majors_151: 
+  name: Cell and Structural Biology
+  id: "151"
+  college_id: "9"
+majors_123: 
+  name: Neuroscience
+  id: "123"
+  college_id: "9"
+majors_096: 
+  name: Journalism
+  id: "96"
+  college_id: "7"
+majors_068: 
+  name: Music History
+  id: "68"
+  college_id: "5"

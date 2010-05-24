@@ -1,0 +1,10 @@
+@user.semesters.each do |semester|
+  semester.cis_courses.each do |course|
+    elem = page["prerequisite_%i_%i" % [semester.id, course.id]]
+    if course.dependencies_satisfied?(semester.id, @user)
+      elem.hide
+    else
+      elem.show
+    end
+  end
+end

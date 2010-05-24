@@ -1,0 +1,2 @@
+page['flashes'].replace :partial => 'layouts/flashes'
+flash.discard

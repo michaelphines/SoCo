@@ -1,0 +1,89 @@
+<% @title = "Semester Schedule" -%>
+
+<div id='sched_and_courses'>
+
+<div id='courses'>
+<div id='semester_title'>
+      <%= "#{@semester.semester} #{@semester.year}" %>
+</div>
+<div id="throbber">
+  <span id="loading_stopped"><%= image_tag "loading_stopped.gif" %></span>
+  <span id="getting_results" style="display:none;"><%= image_tag "loading.gif" %></span>
+</div>
+
+
+<% if Semester.find(params[:id]).user.id == session[:user] -%>
+<p>
+<%= 
+     link_to_remote 'Schedule Generator',
+     {
+           :url => {:action => 'show_previews', :id => params[:id]},
+           :loading => "Element.show('getting_results'); Element.hide('loading_stopped')", 
+           :complete => "Element.hide('getting_results'); Element.show('loading_stopped')"
+     }
+%>
+|
+<%= 
+     link_to 'Register',
+           {:controller => 'register', :action => 'register', :id => params[:id]},
+           :popup => true
+%>
+
+</p>
+<%end -%>
+
+      <%= render :partial => 'course', :collection => @semester.cis_courses, :locals => {:semester_obj => @semester, :effect => false} %>
+</div>
+
+<div id='schedule_container'>
+
+	<div id='schedule_container_inner'>
+      <table id="schedule">
+      <tr>
+            <th id='schedule_semester_label'></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+      </tr>
+
+      <tr id='times_row'>
+            <%= render :partial => 'times_row', :locals => {:semester => @semester || -1} %>
+      </tr>
+      </table>
+	</div>
+</div>
+</div>
+
+<div style='display:none' id='previews_window'>
+
+<%= link_to_remote '<span id="generator_error">close</span>', 
+  {:url => {:action => 'show_previews', :id => params[:id]}} -%>
+
+
+<%= 
+     link_to_remote "<div id='previews_prev'><br /><br />p<br />r<br />e<br />v<br />i<br />o<br />u<br />s</div>",
+     {
+           :url => {:action => 'generate_prev', :id => params[:id]}, 
+           :loading => "Element.show('getting_results'); Element.hide('loading_stopped')", 
+           :complete => "Element.hide('getting_results'); Element.show('loading_stopped')"
+     }
+%>
+      <div id='previews_window_inner'>
+            <div id='previews_list'>
+            </div>
+      </div>
+<%= 
+     link_to_remote "<div id='previews_next'><br /><br /><br /><br />n<br />e<br />x<br />t</div>",
+     {
+           :url => {:action => 'generate_next', :id => params[:id]}, 
+           :loading => "Element.show('getting_results'); Element.hide('loading_stopped')", 
+           :complete => "Element.hide('getting_results'); Element.show('loading_stopped')"
+     }
+%>
+</div>
+
+
+

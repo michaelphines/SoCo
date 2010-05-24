@@ -1,0 +1,19 @@
+table.profile_info tr td:first-child {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 1em;
+	color:#DE7D00;
+}
+
+#friend_list {
+    /*
+    list-style-type: none;
+    */
+}
+
+#profile_title
+{
+	font-family: "Arial Narrow", sans-serif;
+	font-size: 1.25em;
+	font-weight: bold;
+}

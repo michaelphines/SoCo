@@ -1,0 +1,58 @@
+<% @title = "Profile for " << @user.to_s -%>
+<span id="profile_title">
+
+<%= image_tag("headers/profile.gif") %>
+
+<% if params[:id] == session[:user] || params[:id] == nil -%>
+  
+<% else -%>
+ &nbsp;--&nbsp; <i><font size=6 >
+  <%=h @user.to_s %>
+</font>  </i>
+<% end -%>
+
+</span>
+<br/><br/>
+
+<div class="dt box">
+  <%= image_tag "headers/profile2.jpg", :alt => 'Profile Picture', :align => 'right' %>
+  <table class="profile_info">
+    <tr> 
+      <td>Name:</td><td><%=h @user.to_s %></td>
+    </tr><tr>
+      <td>Email:</td>
+      <td><%=h @user.email %></td>
+    </tr><tr>
+      <td>Start Date:</td>
+      <td><%=h @user.start_sem %> <%= @user.start_year %></td>
+    </tr><tr>
+      <td>College:</td>
+      <td><%=h @user.college.name %></td>
+    </tr><tr>
+      <td>Major:</td>
+      <td><%=h @user.major.name %></td>
+    </tr><tr>
+      <td>Birthday:</td>
+      <td><%=h @user.birthday %></td>
+    </tr>
+  </table>
+</div>
+
+<br/><br/>
+<span id="profile_title">
+<%= image_tag("headers/friends.gif") %>
+</span>
+<br/>
+<ul id="friend_list">
+  <%= render :partial => 'friend', :collection => @friends %>
+</ul>
+<br/>
+<div class="h_l"></div>
+<br/>
+<% if params[:id] == session[:user] || params[:id] == nil -%>
+<%= link_to image_tag("headers/edit_profile.gif", :alt => 'Edit Profile', :border => 0, :align => 'left'), :action => 'edit' %>
+<%= link_to image_tag("headers/delete_account.gif", :alt => 'Delete Account', :border => 0, :align => 'right'), {:action => 'destroy'}, :confirm => "Are you sure?\nThis cannot be undone!" %>
+<% end -%>
+<br/>
+<br/>
+<br/>

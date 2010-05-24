@@ -1,0 +1,10 @@
+<li class="friend">
+  <%= link_to h(friend.to_s), :controller => 'profile', :action => 'show', :id => friend %>
+  <% if @user.friends.include? friend -%>
+&nbsp;      <%= link_to image_tag("/images/close_16.png", :border => 0), {:action => 'remove', :id => friend}, :title => 'Remove Friend',
+          :confirm => "Are you sure you want to remove this friend?" %>
+      <%= link_to image_tag("/images/long_16.png", :border => 0), {:controller => 'long_term', :action =>'show', :id => friend}, :title => 'Long Term View'%>
+  <% else -%>
+&nbsp;      <%= link_to image_tag("/images/add_16.png", :border => 0), {:action => 'add', :id => friend}, :title => 'Add Friend' %>
+  <% end -%>
+</li>

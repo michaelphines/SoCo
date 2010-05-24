@@ -1,0 +1,37 @@
+<% @title = "Online Help" -%>
+
+<div class="TOC">
+    <h2>Online Help - Table of Contents:</h2>
+
+    <ol>
+        <li>
+        <%= link_to 'My Profile', :controller => 'help', :action => 'profile'%></li>
+
+        <li>
+        <%= link_to 'Edit My Profile', :controller => 'help', :action => 'editprofile'%></li>
+
+        <li>
+        <%= link_to 'List Friends', :controller => 'help', :action => 'listfriends'%></li>
+
+        <li>
+        <%= link_to 'Search Users', :controller => 'help', :action => 'search'%></li>
+
+        <li>
+            <%= link_to 'Long Term View', :controller => 'help', :action => 'longterm'%>
+
+            <ol>
+                <li>My Long Term View / Friend's Long Term View</li>
+
+                <li>My Weekly Schedule / Friend's Weekly Schedule</li>
+            </ol>
+        </li>
+
+        <li>
+            <%= link_to 'Add Ons', :controller => 'help', :action => 'addons'%>
+
+            <ol>
+                <li>Facebook Sync</li>
+            </ol>
+        </li>
+    </ol>
+</div>

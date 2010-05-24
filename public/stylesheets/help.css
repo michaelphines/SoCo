@@ -1,0 +1,21 @@
+li
+{
+	background: none;
+	padding: 0;
+}
+
+ul, ol
+{
+	padding-left: 2em;
+}
+
+ol
+{
+	list-style-type: upper-roman;
+}
+
+ol ol
+{
+	list-style-type: lower-alpha;
+}
+

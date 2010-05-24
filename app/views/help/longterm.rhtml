@@ -1,0 +1,112 @@
+<% @title = "Online Help" -%>
+
+<html>
+<head>
+<% form_tag({:action => 'longterm'}, {:method => 'get'}) do %>
+<% end %>
+</head>
+
+<div class="longterm">
+<h2><%= link_to 'Online Help', :controller => 'help', :action => 'index'%> > Long-Term View: </h2>
+
+        <li> 'MY Long-Term View' page contains:</li>
+        <br/>
+        <ul> 
+        <li> - Layout of defaulted eight semesters (Fall, Spring)</li>
+
+        <li> - Course Bin - with Add /Search Course functionality</li>
+
+        <li> - Links to Weekly Schedules for each Semester  - 'Sched'</li>
+
+        <li> - Courses (if added) - details shown below (Pre-requisites, Register with a friend, etc.)</li>
+        </ul>
+        
+        <br/>
+        <%= image_tag "help/image006.gif", :align => 'center' %></span></p>
+
+        <li> Facts:</li>
+        <ul>
+        <li> 1. Course Bin: </li>
+        <ul> <li> a. Can search for course to add. </li>
+        <li> b. Added Course will appear in Course Bin, just drag and drop the class block to the desired
+        semester.</li></ul>
+        <br/>
+        <%= image_tag "help/image007.gif", :align => 'center' %>
+        <%= image_tag "help/image008.jpg", :align => 'center' %>
+        <br/><br/>
+        <li> 2. Links to 'MY Weekly Schedule' for each Semester:</li>
+        <br/>
+        <%= image_tag "help/image009.jpg", :align => 'center' %>
+
+        <li> - Upon Clicking on "Sched&gt;", Soco redirects you to the following page:</li>
+
+        <%= image_tag "help/image010.gif", :align => 'center' %>
+
+        <li> - This page will display the classes you have inserted into this semester on the
+        'Long-Term View' page, along with a link called
+        'Sections'.</li>
+
+        <li> - If this course is available that semester, this link will scroll the box down to include all
+        the available sections.</li>
+
+        <li> - Upon selection of a section, the time slots will be inserted in the schedule at the
+        right.</li>
+        <br/>
+        <li> - <b>Schedule Generator:</b> Automatically generate all possible arrangements for your selected classes, 
+        so you can choose the schedule best for you.</li>
+        <br/>
+        <li> - <b>Register:</b> When you finish selecting your courses and class sections, click Register and you 
+        will automatically be directed to the login page of banner. Also, the CRNÕs of all of your desired 
+        classes (sections) will be listed for you at the bottom of the site for you to enter!</li>
+        
+        <br/>
+        <li> 3. Pre-requisite Checks - Listed on Course Box in Red:</li>
+        <ul><li> a. Red Course Box: Course Pre-requisites NOT SATISFIED</li>
+        <li> b. Grey Course Box: Course Pre-requisites SATISFIED</li></ul>
+        <br/>
+        <%= image_tag "help/image011.jpg", :align => 'center' %> 
+        <%= image_tag "help/image012.jpg", :align => 'center' %>
+        <br/><br/>
+        
+        <li> 4. Take a Course with a Friend:</li>
+        <ul> a. Click on "Take With Friend" link on desired course.<%= image_tag "help/image018.jpg", :align => 'center' %> </li>
+        <li> b. New window displays with your current friends.</li>
+        <li> c. Check which friend's you want to invite to take this course with you, click submit
+        button.</li>
+        <li> d. Friend added is now displayed on Course Box- with respective semester.</li>
+        <li> Note: IF you are viewing your friend's profile, You can click on "Take With
+        Friend" link on friend's profile, and the course will be
+        added to your own Long-Term View.</li>
+
+        <br/>
+        
+        <%= image_tag "help/image013.jpg", :align => 'center' %><br/>
+        <%= image_tag "help/image014.gif", :align => 'center' %>
+        <br/>
+        
+        <li> 5. Review Courses / See Course Info - Located on each Course Box</li>
+
+        <ul><li> a. Soco Review System <li>
+        <ul><li> - Click on View Reviews <%= image_tag "help/image019.jpg", :align => 'center' %></li>
+
+        <li> - Upon click, a pop up appears with previous reviews of selected course, along with an entry
+        system to enter your own review of the course.</li></ul>
+        
+        <br/>
+        <%= image_tag "help/image015.gif", :align => 'center' %></span><span class='c46'>
+        <%= image_tag "help/image016.jpg", :align => 'center' %></span></p>
+        <br/>
+        <li> b. Course Fire Integration: <%= image_tag "help/image020.jpg", :align => 'center' %></li>
+        <ul><li>- Click and see reviews from users outside of Soco for the selected course</li></ul>
+
+        <li> c. University Course Catalog: <%= image_tag "help/image021.jpg", :align => 'center' %></li>
+
+        <ul><li> - Click and see the University's detailed description of the selected course</li></ul>
+
+        <li>d. University Class Schedule: <%= image_tag "help/image022.jpg", :align => 'center' %></li>
+
+        <ul><li> - Click and see the University's detailed available sections for the selected course </li></ul>
+        </ul>
+        <br/>
+        <%= link_to 'Back to Online Help', :controller => 'help', :action => 'index'%>
+        </div>

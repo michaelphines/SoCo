@@ -1,0 +1,9 @@
+<% @title = "Addons" -%>
+<h2><i>Tell a friend about us!<br><br></i></h2>
+<form method="post" action="http://hispla.com/soco/sendmail_gateway.php?enable_send_mailer_for_soco=true&extra_params=not_applicable">
+  <strong>Your Name:</strong> <%= User.find session[:user] %> <input name="ref" type="hidden" value="<%= User.find session[:user] %>" /><br /><br>
+  <strong>Friend's email:</strong> <input name="email" type="text" size=19 /><br /><br>
+
+  <textarea name="message" rows="15" cols="40">Hey, check out SoCo, the new social course planner where we can collaboratively plan our course schedules! - http://soco.gotdns.com </textarea><br />
+  <input type="submit" value="Send!" />
+</form>

@@ -1,0 +1,69 @@
+--- 
+colleges_016: 
+  name: Library & Information Science
+  code: LP
+  id: "16"
+colleges_005: 
+  name: Fine & Applied Arts
+  code: KR
+  id: "5"
+colleges_017: 
+  name: Provost & VC Academic Affairs
+  code: NB
+  id: "17"
+colleges_006: 
+  name: Graduate College
+  code: KS
+  id: "6"
+colleges_007: 
+  name: Communications
+  code: KT
+  id: "7"
+colleges_008: 
+  name: Law
+  code: KU
+  id: "8"
+colleges_009: 
+  name: Liberal Arts & Sciences
+  code: KV
+  id: "9"
+colleges_010: 
+  name: Applied Life Studies
+  code: KY
+  id: "10"
+colleges_011: 
+  name: Veterinary Medicine
+  code: LC
+  id: "11"
+colleges_012: 
+  name: Institute of Aviation
+  code: LE
+  id: "12"
+colleges_001: 
+  name: ACES
+  code: KL
+  id: "1"
+colleges_013: 
+  name: Labor & Industrial Relations
+  code: LG
+  id: "13"
+colleges_002: 
+  name: Business
+  code: KM
+  id: "2"
+colleges_014: 
+  name: School of Social Work
+  code: LL
+  id: "14"
+colleges_003: 
+  name: Education
+  code: KN
+  id: "3"
+colleges_015: 
+  name: Office of Continuing Education
+  code: LN
+  id: "15"
+colleges_004: 
+  name: Engineering
+  code: KP
+  id: "4"

@@ -1,0 +1,1 @@
+page["coursediv_%i_%i" % [@semester_id, @course_id]].remove

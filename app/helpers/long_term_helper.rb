@@ -1,0 +1,2 @@
+module LongTermHelper
+end

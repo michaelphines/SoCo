@@ -1,0 +1,172 @@
+.main > div.cont
+{
+	width: 95%;
+	overflow: scroll;
+	position: relative;
+ 	-moz-border-radius: 10px;
+ 	background-color: #eff4e0;
+}
+
+#throbber
+{
+	width: 100%;
+	text-align: center;
+}
+
+#course_bin
+{
+	padding: .5em;
+	border: 2px solid #3E454D;
+	background-color: #f6f7f1;
+}
+
+#add_course
+{
+	border-bottom: 1px dashed black;
+	clear: both;
+	padding-bottom: 2px;
+	margin-bottom: 3px;
+}
+
+#course_bin .course
+{
+	float: left;
+}
+
+.course
+{
+	background-image: url('/images/course/prueba.gif');
+    width: 150px;
+    padding: 0 auto;
+	margin: 2px;
+    border: 0px solid black;
+}
+
+.course .course_code
+{
+	background-image: url('/images/course/prueba2.gif');
+    padding: 2px 4px;
+    background-color: #ddd;
+    font-size: 1.3em;
+    font-weight: bold;
+	color: #f5620A;
+	height: 35px;
+}
+
+.course .course_desc
+{   
+    font-size: .9em;
+    margin-top: 4px;
+    font-family: 'Verdana'
+    margin: 5px;
+    color: #EDF7FF;
+    text-align: center;
+	padding: 0 .5em;
+}
+
+.course .course_prerequisites
+{   
+    font-size: .8em;
+    margin: 5px;
+    font-family: 'Verdana'
+    text-align: center;
+	color: white;
+}
+
+.course .course_sharing
+{
+    margin: 0 auto;
+    font-size: .9em;
+    padding: 0 .5em;
+}
+
+.course .title
+{
+    margin: 0 .5em;
+    color: #DCEFFF;
+    font-size: .9em;
+    font-variant: small-caps;
+    border-bottom: 1px solid black;
+}
+
+.course .course_sharing ul li
+{
+    list-style-type: none;
+     
+    padding: 0;
+    background: none;
+}
+
+.course .links
+{
+
+    background-image: url('/images/course/prueba3.gif');
+    text-align: center;
+	height: 30px;
+	padding-top: 5px;
+}
+
+.course .links img
+{
+	opacity: 0.3
+}
+
+.course .links a img
+{
+	opacity: 1.0
+}
+
+.drop_hover
+{
+    background-color: #ffa !important;
+}
+
+#semesters {
+	width: 100%;
+	overflow-x: scroll;
+}
+
+#semesters td
+{
+	vertical-align: top;
+}
+
+.semester
+{
+    width: 156px;
+    background-color: #f6f7f1;
+    border: 1px solid #3E454D;
+    padding: 5px;
+    min-height: 300px;
+	margin-right: .5em;
+}
+
+.semester .semester_header
+{
+    font-size: 1.5em;
+    color: #3E454D;
+    width: 100%;
+}
+
+.semester .course
+{
+    margin-bottom: .5em;
+}
+
+.needs_prereq
+{
+
+}
+
+.hidden
+{
+	display: none;
+}
+
+hr
+{
+	height: 2px;
+	background-color: #ccc;
+	color: #ccc;
+	border: 0;
+}

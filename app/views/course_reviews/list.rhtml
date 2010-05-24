@@ -1,0 +1,27 @@
+<% @title = "Reviews for " + @course.to_s -%>
+
+
+<div class="widget" id="categories"><div class="widget_b"><h2><%=@course.to_s%></h2></div></div>
+
+<%= error_messages_for 'course_review' %>
+
+<% if @reviews.empty? -%>
+  <h5>No Reviews Found.</h5>
+<% else -%>
+  <div class="dt box">
+    <%= render :partial => 'review', :collection => @reviews %>
+  </div>
+<% end -%>
+<br>				
+
+<h3 id="respond"><img src=/reviews/images/arrow_2.gif>&nbsp;&nbsp;Leave a Review</h3>
+
+<a name="reply"></a>
+<% form_tag :action => 'post', :id => @course.id do %>
+    <p><%= text_field 'course_review', 'title' , :size => 51 %>
+    <label for="course_review_title">Subject <i>(required)</i></label></p>
+
+    <p><%= text_area 'course_review', 'body', :cols => 50, :rows => 10 %></p>
+
+    <%= image_submit_tag "/reviews/images/send.gif" %>
+<% end %>

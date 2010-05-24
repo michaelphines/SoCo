@@ -1,0 +1,12 @@
+<% @title = "Login" -%>
+<div id="form">
+<% form_tag :action => 'validate' do %>
+  <input name="user" type="text" onfocus="if (this.value=='- username -') {this.value='';this.style.textAlign='left';}" onblur="if (this.value == '') {this.value='- username -'; this.style.textAlign='center';}"  size="23" value="- username -" ><br>
+  <input name="pass" type="text" onfocus="if (this.value=='- password -') {this.type='password';this.value='';this.style.textAlign='left';}" onblur="if (this.value == '') {this.type='text'; this.value='- password -'; this.style.textAlign='center';}" size="23" value="- password -">
+  <%= image_submit_tag "login/go.gif", :width => 31, :height => 13 %>
+<% end %>
+</div>
+<div id="footer">
+<div id="compatibility">Viewed best in Firefox, other browsers not yet supported.</div>
+<div id="register"><%= link_to "register", :controller => 'profile', :action => 'register'  %></div>
+</div>

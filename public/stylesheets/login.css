@@ -1,0 +1,84 @@
+html, body
+{
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	background-color: white;
+}
+
+#distance { 
+	width:1px;
+	height:50%;
+	margin-bottom:-179px; /* half of container's height */
+	float:left;
+}
+
+#container {
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	clear: left;
+	height: 358px;
+	width: 541px;
+	background-image: url("/images/login/socologin.jpg");
+}
+
+#form {
+	float: right;
+	margin-top: 250px;
+	text-align: right;
+	margin-right: 20px;
+}
+
+input[type=text],input[type=password] {
+	font-family:Tahoma, Verdana, Arial;
+	font-size: 12px;
+	color:#333333;
+	background-color:#EDF5FB;
+	border-style:solid;
+	border-width:1px;
+	border-color:#6F8B99;
+	text-align: center;
+	width: 142px;
+}
+
+input[type=image]
+{
+}
+
+
+input
+{
+	clear: both;
+	display: block;
+	float: right;
+	margin-bottom: 13px;
+}
+
+
+#footer
+{
+	float: left;
+}
+
+#compatibility
+{
+	font-family: "Arial Narrow" sans-serif;
+	font-size: .7em;
+	margin-top: .3em;
+	float: left;
+	text-align: center;
+	width: 360px;
+}
+
+
+#register
+{
+	float: right;
+	margin-right: 10px;
+}
+
+#register a
+{
+	color: white;
+}

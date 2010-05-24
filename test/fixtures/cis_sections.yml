@@ -1,0 +1,24 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+first:
+  id: 1
+  cis_semester_id: 1
+  name: "AD1"
+  
+another:
+  id: 2
+  cis_semester_id: 1
+  
+second:
+  id: 3
+  cis_semester_id: 4
+  name: "D"
+  
+third:
+  id: 4
+  cis_semester_id: 1
+  name: "L"
+  
+fourth:
+  id: 5
+  cis_semester_id: 4
+  name: "LA"

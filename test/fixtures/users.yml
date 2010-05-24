@@ -1,0 +1,172 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html 
+<% require 'digest/sha1' %>
+
+james:
+  id: 1
+  username: james
+  password_hash: <%= Digest::SHA1.hexdigest 'bondness' %>
+  first_name: nikhil
+  last_name: sonie
+  email: mirani@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1
+  
+tanmay:
+  id: 4
+  username: tanmay
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: tanmay
+  last_name: mirani
+  email: nson@gmail.com
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1
+  
+john:
+  id: 2
+  username: john
+  password_hash: <%= Digest::SHA1.hexdigest 'doe123' %>
+  first_name: John
+  last_name: Doe
+  email: jdoe2@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1
+  
+jane:
+  id: 3
+  username: jane
+  password_hash: <%= Digest::SHA1.hexdigest 'doe123' %>
+  first_name: Jane
+  last_name: Doe
+  email: jdoe3@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1
+
+ 
+kailey:
+  id: 5
+  username: kailey
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: Kailey
+  last_name: Szalko
+  email: szalko@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1
+  
+kathy:
+  id: 6
+  username: kathy
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: Kathleen
+  last_name: Girl
+  email: kgirl@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1
+  
+matt:
+  id: 7
+  username: matt
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: Matt
+  last_name: Guy
+  email: mguy@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1
+  
+scott:
+  id: 8
+  username: scott
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: Scott
+  last_name: Guy
+  email: sguy@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1
+  
+adina:
+  id: 9
+  username: adina
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: Adina
+  last_name: Girl
+  email: agirl@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1  
+
+bob:
+  id: 10
+  username: bob
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: Bob
+  last_name: Doe
+  email: bdoe2@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1
+  
+don:
+  id: 11
+  username: don
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: Don
+  last_name: Soco
+  email: dsoco@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-02-17
+  college_id: 1
+  major_id: 1 
+  
+ken:
+  id: 12
+  username: ken
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: Ken
+  last_name: Soco
+  email: ksoco@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-04-20
+  college_id: 1
+  major_id: 1 
+
+ben:
+  id: 13
+  username: ben
+  password_hash: <%= Digest::SHA1.hexdigest 'monkey' %>
+  first_name: ben
+  last_name: Soco
+  email: bensoco@uiuc.edu
+  start_year: 2007
+  start_sem: SP
+  birthday: 1985-04-20
+  college_id: 1
+  major_id: 1 
